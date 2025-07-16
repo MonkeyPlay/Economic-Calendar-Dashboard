@@ -7,14 +7,15 @@ This Python script is designed to scrape economic calendar data from Investing.c
 Features
 Web Scraping: Fetches the HTML content of the Investing.com economic calendar page.
 Data Parsing: Extracts event details such as:
-Date
-Time
-Currency
-Event Name
-Impact Level (Low, Medium, High - represented as 1, 2, or 3 'bull' icons)
-Actual Value
-Consensus/Forecast Value
-Previous Value
+  Date
+  Time
+  Currency
+  Event Name
+  Impact Level (Low, Medium, High - represented as 1, 2, or 3 'bull' icons)
+  Actual Value
+  Consensus/Forecast Value
+  Previous Value
+  
 Data Visualization: Plots the extracted economic events on a timeline using matplotlib, with each impact level displayed distinctly using different colors and markers.
 How It Works
 Access Webpage: The access_webpage function uses the requests library to send an HTTP GET request to the specified URL (https://uk.investing.com/economic-calendar/) and retrieves the page's HTML content.
@@ -36,13 +37,13 @@ requests: For making HTTP requests to fetch web pages.
 BeautifulSoup4 (bs4): For parsing HTML and XML documents.
 matplotlib: For creating static, animated, and interactive visualizations in Python.
 You can install them using pip:
-pip install requests beautifulsoup4 matplotlib
+  pip install requests beautifulsoup4 matplotlib
 
 
 Usage
-Save the Script: Save the provided Python code (from the python_script_access_page immersive) as a .py file (e.g., economic_calendar_analyzer.py).
-Run the Script: Execute the script from your terminal:
-python calendar_import.py.py
+  Save the Script: Save the provided Python code (from the python_script_access_page immersive) as a .py file (e.g., economic_calendar_analyzer.py).
+  Run the Script: Execute the script from your terminal:
+  python calendar_import.py.py
 
 
 The script will first print a preview of the accessed page content, then a summary of the extracted economic events (the first 10 for brevity), and finally, it will display a matplotlib plot visualizing these events on a timeline.
