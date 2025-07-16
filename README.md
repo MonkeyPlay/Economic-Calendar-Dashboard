@@ -42,13 +42,12 @@ pip install requests beautifulsoup4 matplotlib
 Usage
 Save the Script: Save the provided Python code (from the python_script_access_page immersive) as a .py file (e.g., economic_calendar_analyzer.py).
 Run the Script: Execute the script from your terminal:
-python economic_calendar_analyzer.py
+python calendar_import.py.py
 
 
 The script will first print a preview of the accessed page content, then a summary of the extracted economic events (the first 10 for brevity), and finally, it will display a matplotlib plot visualizing these events on a timeline.
 Important Considerations
 Website Structure Changes: Web scraping scripts are highly dependent on the HTML structure of the target website. If Investing.com changes its layout, element IDs, or class names, the parse_economic_calendar function will need to be updated accordingly.
 Rate Limiting: Be mindful of making too many requests in a short period, as websites might implement rate limiting or block your IP address. This script makes a single request, so it's generally safe for casual use.
-Terms of Service: Always review the website's robots.txt file and terms of service before scraping to ensure compliance.
-License
-This project is open-source and available under the MIT License.
+
+
